@@ -1,0 +1,26 @@
+#   System call constants
+SYS_PRINT_INT       =   1
+SYS_PRINT_FLOAT     =   2
+SYS_PRINT_DOUBLE    =   3
+SYS_PRINT_STRING    =   4
+SYS_READ_INT        =   5
+SYS_READ_FLOAT      =   6
+SYS_READ_DOUBLE     =   7
+SYS_READ_STRING     =   8
+SYS_SBRK            =   9
+SYS_EXIT            =   10
+SYS_PRINT_CHAR      =   11
+SYS_READ_CHAR       =   12
+
+r0          $zero           Always 0
+r1          $at             Reserved for assembler
+r2-r3       $v0-$v1         Stores results
+r4-r7       $a0-$a3         Stores arguments
+r8-r15      $t0-$t7         Temporaries, not saved 
+r16-r23     $s0-$s7         Contents saved for use later
+r24-r25     $t8-$t9         More temporaries, not saved
+r26-r27     $k0-$k1         Reserved by operating system
+r28         $gp             Global pointer
+r29         $sp             Stack Pointer 
+r30         $fp             Frame Pointer
+r31         $ra             Return address
